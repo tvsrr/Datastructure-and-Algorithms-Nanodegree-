@@ -1,0 +1,44 @@
+Calculating Big O:
+
+For reading the calls, texts :
+------------------------------------
+=> With open points to the pointer of the file - O(1)
+=> Reader reads every line - O(number of lines in the file)
+=> Making the read data structure a list - O(1)
+   
+Thus for reading calls.csv and texts.csv for all the tasks, time complexity is around:
+	O(n+2) => O(n)
+
+Task1:
+------
+Printing a line: O(1)
+Get item from list in each print statement: O(1+1+1) = O(3)
+The same for next statement as well, So : O(1)
+for reading files: O(n) => O(n+1) => O(n) 
+
+Task2:
+------
+initiating the list : O(1)
+extending the list : O( len(extended_list)) => O(k)
+making a list with for loop: O(len(Calls)) => O(n)
+zip timecomplexity : O(n)
+Converting into dictionary: O(n)
+The similar operations are done further, considering worst case:
+Thus overall time complexity is O(n)
+
+Task3:
+------
+Time complexity of area_code_seperator function: O(1)
+Time complexity if for loops : O(n)
+For copying into sets,lists : O(n)
+Sorting: O(nlongn)
+Thus worst case time complexity: O(nlogn)
+
+Task4: 
+------
+For loops and appending: O(n)
+converting in to lists,sets : O(n)
+for loops and condition verification: O(n^2)
+sort : O(nlogn)
+Thus over all time complexity: O(n^2)
+
